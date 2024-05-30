@@ -6,15 +6,16 @@
     <title>ECOMMERCE</title>
 </head>
 <body>
-<div class="nav2">
-      <ul>
-         <li class="op-menu"><a href="#Inicio">Inicio</a></li>
-         <li class="op-menu"><a href="#Prop">Propiedades</a></li>
-         <li class="op-menu"><a href="#Client">Clientes</a></li> 
-         <li class="op-menu"><a href="#Servi">Servicios</a></li>
-         <li class="op-menu"><a href="#Conta">Contacto</a></li>
-         <li class="menu-barras"><a href="#menu-barras" style="padding-right:12px">☰</a></li>
-      </ul>
-         </div></nav>
+   <nav>
+      <div class="nav2">
+      
+         <button id="iniciarSesion">Iniciar sesion</button>
+         <button id="registrar">Registrar</button>
+         
+      </div>
+   </nav>
+
+   <script src="jquery-3.7.1.min.js"></script>
+
 </body>
 </html>
