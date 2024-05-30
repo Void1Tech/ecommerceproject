@@ -1,0 +1,121 @@
+﻿*{
+    margin:0;  
+  }
+  
+  body
+  {   display:flex;
+      align-items:center;
+      justify-content:center;
+      background:white;
+      flex-direction: column;
+}
+ nav {
+    width:100vw;
+    height: 10vh; 
+    border-top: 1px solid rgb(175, 21, 21);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background:rgba(34, 34, 34, 0.5);
+    position:fixed;top:0;left:0;
+}
+.nav1{
+    width: 10vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgb(20, 16, 16);
+    
+}
+.nav2{
+    width: 90vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    border-top: 1px solid rgb(19, 15, 15);
+    font-family:HeyComic;
+   
+}
+
+header {
+    width:100vw;
+    height: 100vh;
+    background: url(Recursos/Fondo\ web.jpg) no-repeat;
+    background-size:100vw 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.art1{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column
+   
+}
+.art2 {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column
+    
+}
+ul,li{
+    list-style-type:none;
+    display:flex;
+    flex-direction:row;
+    margin:10px;
+    align-items:center;
+    justify-content:flex-end;
+    color:#fff;
+    
+}
+a{
+   text-decoration:none;
+   color:white;
+}
+a:hover{color:goldenrod}
+@font-face{
+    font-family: HeyComic;
+    src:url(../fuente/HeyComic.ttf);}
+.muebles{
+animation: moverMuebles 1.2s ease-in-out infinite alternate;
+
+}
+@keyframes moverMuebles{
+from{transform:translateY(0);}
+to{transform:translateY(50px);}
+}
+p{line-height: 20px;
+   color:gold;
+    text-align: justify;
+    padding: 50px;
+    padding-top: 30px;
+    font-family:HeyComic;
+    font-size:larger;
+}
+h1{font-size:2em;
+    color:rgb(235, 181, 5);
+text-align: center;
+font-family:HeyComic;
+}
+section,#Prop,#Client,#Servi,#Conta{
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(Recursos/Fondo\ web.jpg) no-repeat;
+    background-size: 100vw 100vh;
+    }
+   
+    
+    
+    

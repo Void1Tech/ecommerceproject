@@ -1,0 +1,10 @@
+@media screen and (max-width: 600px) {
+    #formulario {
+      width: 90%; 
+      margin: auto;
+      }
+    }
+
+    #formulario input, #formulario select, #formulario textarea {
+      width: 100%;
+    }

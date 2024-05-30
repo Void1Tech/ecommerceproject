@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="MediaF.css">
+    <link rel="stylesheet" href="formulario L13.css">
+</head>
+<body>
+    <article id="formulario">
+        <div class="usuario"></div>
+    <div class="titulo">
+    REGISTRARSE
+    </div>
+    <form method="post">
+        <label>Nombre de usuario:</label>
+        <br><br>
+
+        <input type="text"
+           name="nombre"
+           id="nombre"
+         minlength="6"
+         maxlength="30"
+         placeholder="Alex"
+         required
+         onkeydown="noEspacios(event)"
+         oninput="validarEntrada(this)">
+         <br><br>
+
+         <label> Contraseña: </label>
+         <br><br>
+
+         <input type="password" id="clave1"
+          name="clave1" 
+          minlength="6" maxlength="20"
+          oninput = "verificarPassword()"
+          placeholder="******">
+          <br><br>
+
+          <label> Verificar contraseña: </label>
+          <br><br>
+
+          <input type="password" id="clave2"
+          name="clave2"
+          minlength="6" maxlength="20"
+          placeholder="******"
+          oninput="verificarPassword()">
+          <br><br>
+          
+          <label id="mensaje" style="color:red"></label>
+          <br><br>
+          <hr style="width:390px">
+          <br><br>
+          
+          <label> Email: </label>
+          <br><br>
+
+          <input type="email" id="email"
+          name="email" onkeydown="noespacios(event)"
+          placeholder="alexjmarquezsel@gmail.com" required>
+          <br><br>
+
+          <label> Celular: </label>
+          <br><br>
+          
+          <input type="tel" id="cel" name="cel"
+          minlength="9" maxlength="9"
+          oninput="this.value=this.value.replace(/[^0-9]/g,'');"
+          
+          onkeydown="noEspacios(event)"
+          aria-placeholder="+095123456" required>
+          
+          <label> Residencia actual: </label>
+          <br><br>
+
+          <select id="depto" name="depto" required>
+            <option value="Artigas">Artigas</option>
+            <option value="Canelones">Canelones</option>
+            <option value="Montevideo" selected>
+                Montevideo</option>
+            </select>
+
+            <label> fecha de nacimiento: </label>
+            <br><br>
+
+            <input type="date" id="fecha" name="fecha" required>
+            <br><br>
+
+            <label> Subir foto de perfil </label>
+            <br><br>
+
+            <input type="file" id="foto"
+            name="foto" accept=".jpg,.png">
+            <br><br>
+
+            
+
+
+         
+
+
+    </form>
+    </div>
+
+</article>
+<script src="script.js"></script>
+</body>
+</html>
