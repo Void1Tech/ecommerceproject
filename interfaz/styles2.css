@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slider {
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px; /* Ajusta el ancho del slider según tus necesidades */
+    margin: 0 auto; /* Centra el slider en la página */
+    position: relative; /* Añade posición relativa para que los botones se posicionen correctamente */
+  }
+  
+  .slide {
+    width: 100%;
+    display: none;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f1f1f1;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: #ddd;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
